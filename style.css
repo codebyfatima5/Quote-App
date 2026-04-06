@@ -1,0 +1,92 @@
+:root {
+  --bg: #1e1e2f;       /* Dark background */
+  --card: #ffffff10;    /* Dark card */
+  --text: #ffffff;      /* Dark text */
+  --btn: #ff7b00;
+}
+
+.light {
+  --bg: #f5f5f5;        /* Light background */
+  --card: #ffffff;       /* Light card */
+  --text: #000000;       /* Light text */
+  --btn: #007bff;
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Quote box */
+.quote-box {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Saved list */
+.saved ul {
+  padding: 0;
+  list-style: none;
+}
+
+.saved li {
+  background: var(--card);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: var(--btn);
+  color: white;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Animation */
+.fade {
+  animation: fade 0.4s;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; }
+}

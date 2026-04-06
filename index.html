@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quote App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="top-bar">
+    <h1> Quote App 💭</h1>
+
+    <select id="language">
+      <option value="en">EN</option>
+      <option value="ur">UR</option>
+    </select>
+
+    <button id="themeToggle">🌙</button>
+  </div>
+
+  <div class="quote-box fade">
+    <p id="quote">Loading...</p>
+    <h4 id="author"></h4>
+  </div>
+
+  <div class="buttons">
+    <button onclick="getQuote()">New</button>
+    <button onclick="saveQuote()">❤️ Save</button>
+    <button onclick="copyQuote()">Copy</button>
+  </div>
+
+  <div class="saved">
+    <h3>Saved Quotes</h3>
+    <ul id="savedList"></ul>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
